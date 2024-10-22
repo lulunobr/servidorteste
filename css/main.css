@@ -1,0 +1,33 @@
+.file-grid {
+    display: flex; /* Usar flexbox para disposição */
+    flex-wrap: wrap; /* Permitir que os itens se movam para a linha de baixo */
+    justify-content: space-between; /* Espaçamento uniforme entre os itens */
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover preenchimento */
+    margin: 0; /* Remover margem */
+}
+
+.file-item {
+    flex: 0 1 calc(50% - 10px); /* 50% da largura menos um espaço para margem */
+    box-sizing: border-box; /* Incluir padding e border no tamanho total */
+    margin-bottom: 20px; /* Espaçamento entre linhas */
+    background-color: #fff; /* Fundo branco para os itens */
+    padding: 10px; /* Preenchimento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center; /* Centralizar o texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.file-img {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+    max-height: 150px; /* Limite de altura para uniformidade */
+    object-fit: cover; /* Corta a imagem para caber no espaço */
+    border-radius: 5px; /* Arredondamento nas bordas */
+}
+
+.file-title {
+    margin-top: 10px; /* Espaçamento acima do título */
+    font-weight: bold; /* Destaque o título */
+}
+
